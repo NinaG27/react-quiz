@@ -1,8 +1,37 @@
-# Getting Started with Create React App
+### React Quiz App
+
+This project is a dynamic quiz application built with React. It was initially created as a practice project while learning about React Router, but has since been expanded with additional features and components.
+
+### Features
+
+**Dynamic Question Loading:** The application fetches quiz questions from an external API (https://opentdb.com/), providing a different quiz experience each time.
+
+**Progress Tracking:** The application tracks and displays the user's progress through the quiz, including the current question number and score.
+
+![progressSizeGood](https://github.com/NinaG27/react-quiz/assets/43183504/b43a997b-db4b-46c0-99a8-0cf7d35b4913)
+
+**Start Screen:** Before starting the quiz, users can select the difficulty level and category of the questions.
+
+![DropdownSizeGood](https://github.com/NinaG27/react-quiz/assets/43183504/5002e942-6fd7-4412-83bc-d8529959fb2a)
+
+**Loading State:** While fetching questions from the API, the application displays a loading state to keep the user informed.
+
+![LoaderGoodSIze](https://github.com/NinaG27/react-quiz/assets/43183504/e1c4a31a-9f0c-4544-ba57-782c61078b85)
+
+**High Score Tracking:** The application keeps track of the user's high score across multiple quiz sessions.
+
+![ezgif com-resize](https://github.com/NinaG27/react-quiz/assets/43183504/39d7986c-6277-40b7-b5ca-d1f000de15f4)
+
+### Learning Outcomes
+
+This project served as a practical application of several React concepts, including React Router for managing different views, the useReducer hook for state management, and useEffect for side effects such as fetching data from an API. It also provided experience with asynchronous JavaScript and error handling.
+
+### Future Improvements
+Future improvements could include adding more customization options for the quiz, such as the number of questions, and more advanced score tracking. 
+
+----------------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
 
 In the project directory, you can run:
 
@@ -11,60 +40,3 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
