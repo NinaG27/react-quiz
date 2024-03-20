@@ -1,6 +1,8 @@
 ### React Quiz App
 
-This project is a dynamic quiz application built with React. It was initially created as a practice project while learning about React Router, but has since been expanded with additional features and components.
+This project is a dynamic quiz application built with React. It was initially created as a practice project while learning about React Router, but has since been expanded with additional features and components. 
+
+This project is based on The Ultimate React Course 2024: React, Redux & More offered by Udemy. The original code was provided by Jonas Schmedtmann.
 
 ### Features
 
