@@ -1,6 +1,6 @@
 ### React Quiz App
 
-This project is a dynamic quiz application built with React. It was initially created as a practice project while learning about React Router, but has since been expanded with additional features and components. 
+This project is a dynamic quiz application built with React. It was initially created as a practice project while learning about React Router, but has since been expanded with additional features and components as well as refactoring the code to use context API. 
 
 This project is based on The Ultimate React Course 2024: React, Redux & More offered by Udemy. The original code was provided by Jonas Schmedtmann.
 
@@ -26,7 +26,7 @@ This project is based on The Ultimate React Course 2024: React, Redux & More off
 
 ### Learning Outcomes
 
-This project served as a practical application of several React concepts, including React Router for managing different views, the useReducer hook for state management, and useEffect for side effects such as fetching data from an API. It also provided experience with asynchronous JavaScript and error handling.
+This project served as a practical application of several React concepts, including React Router for managing different views, the useReducer hook for state management, useEffect for side effects such as fetching data from an API and using React Context API to manage state and clean up prop. It also provided experience with asynchronous JavaScript and error handling.
 
 ### Future Improvements
 Future improvements could include adding more customization options for the quiz, such as the number of questions, and more advanced score tracking. 
