@@ -1,40 +1,20 @@
-import { useEffect, useState } from 'react';
 import Dropdown from './Dropdown';
-
 import { difficulties, categories } from '../data/data';
+import { useQuiz } from '../context/QuizContext';
 
-function StartScreen({ dispatch }) {
-    const [difficulty, setDifficulty] = useState('easy');
-    const [category, setCategory] = useState(8);
-    const [fetchData, setFetchData] = useState(false);
+function StartScreen() {
+    const { dispatch, fetchQuestions } = useQuiz();
 
     function mapCategory(value) {
         const key = Object.keys(categories).find(
             key => categories[key].toLocaleLowerCase() === value
         );
-        setCategory(key);
+        dispatch({ type: 'category', payload: key });
     }
 
-   useEffect(() => {
-        const fetchDataFromAPI = async () => {
-            const API_URL = `https://opentdb.com/api.php?amount=15&category=${
-                category === 8 ? '' : category
-            }&difficulty=${difficulty}&type=multiple`;
-
-            try {
-                dispatch({ type: 'loading' });
-                const response = await fetch(API_URL);
-                const data = await response.json();
-                dispatch({ type: 'dataReceived', payload: data });
-            } catch (err) {
-                console.error('Failed to fetch data', err);
-                dispatch({ type: 'dataError' });
-            }
-        };
-        if (fetchData) {
-            fetchDataFromAPI();
-        }
-    }, [fetchData, dispatch, difficulty, category]);
+    function setDifficulty(value) {
+        dispatch({ type: 'difficulty', payload: value });
+    }
 
     return (
         <div>
@@ -48,7 +28,7 @@ function StartScreen({ dispatch }) {
                 arr={Object.values(categories)}
                 action={mapCategory}
             />
-            <button className='btn btn-ui' onClick={() => setFetchData(true)}>
+            <button className='btn btn-ui' onClick={fetchQuestions}>
                 Let's start
             </button>
         </div>

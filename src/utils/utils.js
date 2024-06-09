@@ -5,6 +5,7 @@ export function decodeHtml(html) {
         .replace(/&amp;/g, '&')
         .replace(/&#37;/g, '%')
         .replace(/&deg;/g, '°')
+        .replace(/&eacute;/g, 'é')
 }
 
 export function shuffle(array) {
